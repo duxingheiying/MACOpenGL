@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>392</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>392</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="NewCreateAction"/>
+    <addaction name="Open_Action"/>
+    <addaction name="separator"/>
+    <addaction name="CloseAction"/>
+    <addaction name="Save_action"/>
+    <addaction name="action_A"/>
+    <addaction name="separator"/>
+    <addaction name="action_X"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_Z"/>
+    <addaction name="Cut_Action"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="NewCreateAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/Pictures/images/document-new.png</normaloff>:/Pictures/images/document-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建(N)</string>
+   </property>
+   <property name="toolTip">
+    <string>NewCreate(&amp;N)</string>
+   </property>
+  </action>
+  <action name="Open_Action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="Open" resource="image.qrc">
+     <normaloff>:/Pictures/images/document-open.png</normaloff>:/Pictures/images/document-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(O)</string>
+   </property>
+   <property name="toolTip">
+    <string>Open(&amp;O)</string>
+   </property>
+   <property name="priority">
+    <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="CloseAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/Pictures/images/gtk-close.png</normaloff>:/Pictures/images/gtk-close.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭(C)</string>
+   </property>
+   <property name="toolTip">
+    <string>Close(&amp;C)</string>
+   </property>
+  </action>
+  <action name="Save_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/Pictures/images/document-save.png</normaloff>:/Pictures/images/document-save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(S)</string>
+   </property>
+   <property name="toolTip">
+    <string>Save(&amp;S)</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/Pictures/images/document-save-as.png</normaloff>:/Pictures/images/document-save-as.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为(A)</string>
+   </property>
+   <property name="toolTip">
+    <string>另存为(&amp;A)</string>
+   </property>
+  </action>
+  <action name="action_X">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/Pictures/images/exit.png</normaloff>:/Pictures/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出(X)</string>
+   </property>
+   <property name="toolTip">
+    <string>Exit（&amp;X)</string>
+   </property>
+  </action>
+  <action name="action_Z">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/Pictures/images/edit-undo.png</normaloff>:/Pictures/images/edit-undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销(Z)</string>
+   </property>
+   <property name="toolTip">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="Cut_Action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/Pictures/images/editcut.png</normaloff>:/Pictures/images/editcut.png</iconset>
+   </property>
+   <property name="text">
+    <string>剪切(X)</string>
+   </property>
+   <property name="toolTip">
+    <string>Cut(&amp;X)</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
